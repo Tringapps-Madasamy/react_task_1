@@ -1,0 +1,75 @@
+ #inputcontainer1{
+     display: none;
+} 
+#inputcontainer2{
+    display: none;
+}
+#inputcontainer3{
+    display: none;
+}
+.inputs{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+.drop{
+    border: none;
+    border-radius: 30px;
+    background-color: aqua;
+    width: 10%;
+    padding: 15px;
+    margin: 10px;
+}
+.box{
+    border: none;
+    font-weight: bold;
+    background-color: aqua;
+    width: 10%;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 30px;
+}
+.plus{
+    margin: 10px;
+    background-color: whitesmoke;
+    border: none;
+    width: 30px;
+    font-weight: bold;
+    font-size: large;
+    border-radius: 30px;
+}
+.createproductbox{
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    background-color: lightblue;
+    width: 9%;
+    padding: 15px;
+    margin: 10px;
+}
+.createbox{
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    background-color: lightblue;
+    width: 10%;
+    padding: 15px;
+    margin: 10px;
+}
+.minus{
+    margin: 10px;
+    background-color: darkslategrey;
+    color: white;
+    border: none;
+    width: 30px;
+    font-weight: bold;
+    font-size: large;
+    border-radius: 30px;
+}
+.submit{
+    border: none;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 50px;
+    font-weight: bolder;
+}

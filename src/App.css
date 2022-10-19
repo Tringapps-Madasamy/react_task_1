@@ -1,0 +1,9 @@
+.card_container
+{
+  width: 250px;
+  box-shadow: 0px 0px 15px -5px;
+  overflow: hidden;
+  margin:5% 15%;
+  border-radius: 15px;
+  background-color: rgba(255, 43, 96, 0.2); 
+}
