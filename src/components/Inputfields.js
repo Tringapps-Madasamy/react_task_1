@@ -203,7 +203,7 @@ return(
                 <option>samsung</option>
             </select>
             <input className="box" type="text" name="text" id="text1" value={Qty} placeholder='Quality' onChange={(e)=>setQuantity(e.target.value)}/>
-            <input className="box" type="text" name="text" id="text2" value={Price} placeholder='Price'  onChange={(e)=>setPrice(e.target.value)}/>
+            <input className="box" type="text" name="text" id="text2" value={Price} placeholder='Price'  onChange={(e)=>setPrice(e.target.value)} readOnly/>
             <input className="box" type="text" name="text" id="text3" value={Price*Qty} placeholder='Total amount'/>
             <button className="plus" onClick={Addrow1}>+</button>
         </div>    
@@ -237,7 +237,7 @@ return(
                 <option>Chudithar</option>
             </select>
             <input className="box" type="text" name="text" id="text" value={Qty} placeholder='Quality' onChange={(e)=>setQuantity(e.target.value)}/>
-            <input className="box" type="text" name="text" id="text" value={Price} placeholder='Price'  onChange={(e)=>setPrice(e.target.value)}/>
+            <input className="box" type="text" name="text" id="text" value={Price} placeholder='Price'  onChange={(e)=>setPrice(e.target.value)} readOnly/>
             <input className="box" type="text" name="text" id="text"  value={Price*Qty} placeholder='Total amount'/>
             <button className="plus" onClick={Addrow2}>+</button>
         </div>    
@@ -272,7 +272,7 @@ return(
                 <option>Grinder</option>
             </select>
             <input className="box" type="text" name="text" id="text" value={Qty} placeholder='Quality' onChange={(e)=>setQuantity(e.target.value)}/>
-            <input className="box" type="text" name="text" id="text" value={Price} placeholder='Price'  onChange={(e)=>setPrice(e.target.value)}/>
+            <input className="box" type="text" name="text" id="text" value={Price} placeholder='Price'  onChange={(e)=>setPrice(e.target.value)} readOnly/>
             <input className="box" type="text" name="text" id="text" value={Price*Qty} placeholder='Total amount' />
             <button className="plus" onClick={Addrow3}>+</button>
         </div>    
