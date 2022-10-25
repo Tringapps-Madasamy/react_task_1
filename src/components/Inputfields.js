@@ -171,29 +171,31 @@ function Supplierbuttons(){
          setQuantity("");
          setPrice("");
  }
- const supplier_detail=(event)=>{
-    console.log(supplier_detail);
-    console.log(document.getElementById('inputcontainer1'));
+ const [currentdisplay1,setcurrentdisplay1]=useState(false);
+ const [currentdisplay2,setcurrentdisplay2]=useState(false);
+ const [currentdisplay3,setcurrentdisplay3]=useState(false);
+const supplier_detail=(event)=>{
     if(event.target.id === "button1"){
-        document.getElementById('inputcontainer1').style.display="inline-block";
-        document.getElementById('inputcontainer2').style.display="none";
-        document.getElementById('inputcontainer3').style.display="none";
+        setcurrentdisplay1(true);
+        setcurrentdisplay2(false);
+        setcurrentdisplay3(false);
     }
     else if(event.target.id === "button2"){
-        document.getElementById('inputcontainer1').style.display="none";
-        document.getElementById('inputcontainer2').style.display="inline-block";
-        document.getElementById('inputcontainer3').style.display="none";
+        setcurrentdisplay1(false);
+        setcurrentdisplay2(true);
+        setcurrentdisplay3(false);
     }
     else if(event.target.id === "button3"){
-        document.getElementById('inputcontainer1').style.display="none";
-        document.getElementById('inputcontainer2').style.display="none";
-        document.getElementById('inputcontainer3').style.display="inline-block";
+        setcurrentdisplay1(false);
+        setcurrentdisplay2(false);
+        setcurrentdisplay3(true);
     }
- }
+}
 return(
 <div className='supplierbutton'>
     <Supplierbutton supplier_detail={supplier_detail} />
     <div className='secondchild'>
+        {currentdisplay1 ?
     <div id='inputcontainer1'>
         <div className='inputs'>
             <select className="drop"  value={Pname} onChange={(e)=>handleprice1(e)}>
@@ -225,7 +227,8 @@ return(
             <button className="submit" onClick={storethedata1}>SUBMIT</button>
         </div>
     </div>
-     
+     : ' '}
+     {currentdisplay2 ?
      <div id='inputcontainer2'>
         <div className='inputs'>
             <select className="drop"  value={Pname} onChange={(e)=>handleprice2(e)}>
@@ -259,7 +262,8 @@ return(
             <button className="submit" onClick={storethedata2}>SUBMIT</button>
         </div>
     </div>
-   
+   :' '}
+   {currentdisplay3 ?
     <div id='inputcontainer3'>
         <div className='inputs'>
             <select className="drop" value={Pname} onChange={(e)=>handleprice3(e)}>
@@ -294,6 +298,7 @@ return(
             <button className="submit" onClick={storethedata3}>SUBMIT</button>
         </div>
     </div>
+     :' '}
     </div>
     <ToastContainer/>
 </div>    
