@@ -1,12 +1,3 @@
- #inputcontainer1{
-     display: none;
-} 
-#inputcontainer2{
-    display: none;
-}
-#inputcontainer3{
-    display: none;
-}
 .inputs{
     display: flex;
     justify-content: center;
