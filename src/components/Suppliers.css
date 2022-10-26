@@ -33,3 +33,15 @@ table{
 td{
     text-align: center;
 }
+@media screen  and (max-width:768px) {
+    .tabledata{
+        width: 100%;
+    }
+    .card_container{
+        width: 100%;
+        font-size: x-small;
+    }
+    .supplierbutton{
+        margin-left: 20%;
+    }
+}
