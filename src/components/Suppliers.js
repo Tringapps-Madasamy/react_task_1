@@ -1,6 +1,7 @@
 import React from 'react'
 import Card from './Card'
 import './Suppliers.css'
+import './inputfields.css'
 const Supplier_button=({supplier_detail})=>{
     console.log("hello");
     console.log(supplier_detail);
