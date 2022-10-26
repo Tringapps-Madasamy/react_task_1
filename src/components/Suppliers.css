@@ -44,4 +44,25 @@ td{
     .supplierbutton{
         margin-left: 20%;
     }
+     .inputs{
+    flex-direction: column;
+  }
+  .drop{
+    width: 50%;
+  }
+  .box{
+    width: 50%;
+  }
+  .addingdata{
+    flex-direction: column;
+  }
+  .createproductbox{
+    width: 50%;
+  }
+  .createbox{
+    width: 50%;
+  }
+  .minus{
+    width: 30%;
+  }
 }
