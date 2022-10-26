@@ -209,7 +209,7 @@ return(
             <input className="box" type="text" name="text" id="text3" value={Price*Qty} placeholder='Total amount'/>
             <button className="plus" onClick={Addrow1}>+</button>
         </div>    
-        <div>
+        <div  className='addingdata'>
                 {datalist1.map((data,i)=>{
                     return (
                         <>
@@ -244,7 +244,7 @@ return(
             <input className="box" type="text" name="text" id="text"  value={Price*Qty} placeholder='Total amount'/>
             <button className="plus" onClick={Addrow2}>+</button>
         </div>    
-        <div>
+        <div  className='addingdata'>
                 {datalist2.map((data,i)=>{
                     return (
                         <>
@@ -280,7 +280,7 @@ return(
             <input className="box" type="text" name="text" id="text" value={Price*Qty} placeholder='Total amount' />
             <button className="plus" onClick={Addrow3}>+</button>
         </div>    
-        <div>
+        <div  className='addingdata'>
                 {datalist3.map((data,i)=>{
                     return (
                         <>
